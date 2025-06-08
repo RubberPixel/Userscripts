@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         XHamster "Watched" videos remover
 // @namespace    http://tampermonkey.net/
-// @version      2024-11-25
+// @version      2025-06-08
 // @license      MIT
 // @description  Removes thumbnails in XHamster for already watched videos
 // @author       RubberPixel
@@ -21,3 +21,4 @@ function GM_addStyle(cssStr){
 }
  
 GM_addStyle(".thumb-list__item:has(> a > div > div.thumb-image-container__watched) { visibility: collapse; }");
+GM_addStyle(".thumb-list-mobile-item:has(div > a > div > div.thumb-image-container__watched) { visibility: collapse; }");
